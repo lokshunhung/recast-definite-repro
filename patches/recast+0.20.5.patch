@@ -1,0 +1,14 @@
+diff --git a/node_modules/recast/lib/printer.js b/node_modules/recast/lib/printer.js
+index 20fb594..eab11a4 100644
+--- a/node_modules/recast/lib/printer.js
++++ b/node_modules/recast/lib/printer.js
+@@ -1065,6 +1065,9 @@ function genericPrintNoParens(path, options, print) {
+             if (n.optional) {
+                 parts.push("?");
+             }
++            if (n.definite) {
++                parts.push("!");
++            }
+             if (n.typeAnnotation) {
+                 parts.push(path.call(print, "typeAnnotation"));
+             }

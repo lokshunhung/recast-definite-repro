@@ -4,11 +4,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "postinstall": "patch-package",
     "test": "jest"
   },
   "dependencies": {
     "@babel/parser": "7.16.4",
     "jest": "27.4.3",
+    "patch-package": "6.4.7",
+    "postinstall-postinstall": "2.1.0",
     "prettier": "2.5.1",
     "recast": "0.20.5"
   },
